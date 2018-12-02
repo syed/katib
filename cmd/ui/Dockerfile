@@ -7,6 +7,6 @@ RUN go build -o katib-ui
 FROM alpine:3.7
 WORKDIR /app
 COPY --from=build-env /go/src/github.com/kubeflow/katib/cmd/ui/katib-ui /app/
-COPY cmd/ui/static /static
-COPY cmd/ui/template /template
+COPY cmd/ui/static static
+COPY cmd/ui/template template
 ENTRYPOINT ["./katib-ui"]
