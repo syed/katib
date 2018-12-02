@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: katib-ui
-        image: katib/katib-ui
+        image: syed/katib-ui
         command:
           - './katib-ui'
         ports:
