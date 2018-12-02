@@ -45,5 +45,4 @@ spec:
           mountPath: /var/lib/mysql
       volumes:
       - name: katib-mysql
-        persistentVolumeClaim:
-          claimName: katib-mysql
+        emptyDir: {}
